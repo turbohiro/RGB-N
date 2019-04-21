@@ -31,6 +31,7 @@ For ImageNet resnet101 pre-trained model, please download from https://github.co
 2. Change `dataDir` in `coco_synthetic/demo.py` to the path of 'train2014' (e.g, `./cocostuff/coco/train2014`)
 3. Run `run_demo.sh 1 100` to choose the begin and end COCO category used for creating the tamper synthetic dataset.
 4. Run `split_train_test.py` to make train/test split. (making sure that the images used to generate training set not overlap with the images for testing)
+5. Add 'Tamper' or 'Authentic' to the end of each line in split text.
 
 # Train on synthetic dataset
 1. Change the coco synthetic path in `lib/factory.py`:
